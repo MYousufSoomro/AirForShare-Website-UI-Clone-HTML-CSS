@@ -1,0 +1,162 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+.main {
+  max-width: 980px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  list-style-type: none;
+}
+
+li {
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.link {
+  color: #638eff;
+  font-weight: 700;
+}
+
+li:hover,
+.link:hover {
+  color: #765cff;
+  cursor: pointer;
+}
+
+.secondaryBox {
+  display: flex;
+  height: 60vh;
+  box-shadow: 0 0 10px rgb(215, 215, 215);
+  background-color: white;
+
+  position: relative;
+  top: 50px;
+}
+
+.icons-box {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.icons {
+  color: #9b9b9b;
+}
+.icons:hover {
+  color: black;
+}
+
+.footerBox {
+  margin-top: 80px;
+  text-align: center;
+}
+.footerBox p {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.fileTypeBox {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  background-color: #f8f8f8;
+  height: 100%;
+}
+
+.fileTypeBox a {
+  font-size: 30px;
+  color: #b6b6b6;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  /* border: 1px solid #9b9b9b; */
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 20px;
+}
+
+.contentBox h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: 0.6px;
+  color: #000;
+  margin-bottom: 28px;
+}
+
+.contentBox textarea {
+  font-size: 22px;
+  letter-spacing: -0.7px;
+  width: 99%;
+  border: none;
+  min-height: 221px;
+  resize: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .contentBox textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.contentBox textarea {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+} */
+
+.contentBox textarea:focus {
+  outline: none;
+}
+
+.fileTypeBox a.active {
+  background-color: white;
+  color: #765cff;
+}
+
+.contentBoxBtnDiv {
+  display: flex;
+  justify-content: end;
+}
+
+.contentBoxBtnDiv button {
+  margin-right: 20px;
+  min-width: 230px;
+  min-height: 61px;
+  padding: 0;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.6px;
+  line-height: 57px;
+  font-weight: 700;
+}
+
+.contentBoxBtnDiv button:hover {
+  color: #765cff;
+  border-color: #765cff;
+  cursor: pointer;
+}
